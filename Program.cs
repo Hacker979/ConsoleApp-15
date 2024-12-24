@@ -8,26 +8,22 @@ namespace ConsoleApp_15
 {
     class Program
     {
-        static void print()
+        static void Rand()
         {
-            int a = 0;
-            for (int x = 10; x <= 99; x++)
+            Random pon = new Random();
+            for (int x = 1; x <= 10; x++)
             {
-                if (x % 2 == 0)
-                {
-                    Console.WriteLine(x);
-                    a++;
-                } 
+                int num = pon.Next(-40,40);
+                Console.WriteLine($"{x} число = {num}");
             }
-            Console.WriteLine(a);
         }
 
         /// <summary>
-        /// Задача 3. Вывести четные двузначные числа и подсчитать их количество.
+        /// Задача 4. Генерируются 10 случайных целых чисел в интервале (-40, 40). Вывести эти числа.
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            print();
+            Rand();
 
             Console.ReadLine();
         }
