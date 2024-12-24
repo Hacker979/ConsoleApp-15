@@ -11,15 +11,20 @@ namespace ConsoleApp_15
         static void Rand()
         {
             Random pon = new Random();
-            for (int x = 1; x <= 10; x++)
+            int a = 0;
+            int z = 0;
+            for (int x = 1; x <= 15; x++)
             {
-                int num = pon.Next(-40,40);
+                int num = pon.Next(-20,30);
                 Console.WriteLine($"{x} число = {num}");
+                z = num >= 0 ? a++ : a+0;
+                
             }
+            Console.WriteLine(z);
         }
 
         /// <summary>
-        /// Задача 4. Генерируются 10 случайных целых чисел в интервале (-40, 40). Вывести эти числа.
+        /// Задача 5. Генерируются 15 случайных целых чисел в интервале (-20, 30). Вывести эти числа и подсчитать количество положительных чисел.
         /// <param name="args"></param>
         static void Main(string[] args)
         {
