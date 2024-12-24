@@ -10,14 +10,15 @@ namespace ConsoleApp_15
     {
         static void print()
         {
-            for (int x = 0; x <= 10; x++)
+            for (int x = 2; x <= 20; x++)
             {
-                Console.Write("20 ");
+                Console.WriteLine($"{x}штук = {x*20.4} руб");
             }
         }
 
         /// <summary>
-        /// Задача 1. Напечатать ряд чисел 20 в виде: 20 20 20 20 20 20 20 20 20 20.
+        /// Задача 2. Одна штука некоторого товара стоит 20,4 руб.
+        /// Напечатать таблицу стоимости 2, 3, ..., 20 штук этого товара.
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)
