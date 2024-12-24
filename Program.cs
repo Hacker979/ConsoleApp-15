@@ -10,16 +10,20 @@ namespace ConsoleApp_15
     {
         static void print()
         {
-            for (int x = 2; x <= 20; x++)
+            int a = 0;
+            for (int x = 10; x <= 99; x++)
             {
-                Console.WriteLine($"{x} штук = {x*20.4} руб");
+                if (x % 2 == 0)
+                {
+                    Console.WriteLine(x);
+                    a++;
+                } 
             }
+            Console.WriteLine(a);
         }
 
         /// <summary>
-        /// Задача 2. Одна штука некоторого товара стоит 20,4 руб.
-        /// Напечатать таблицу стоимости 2, 3, ..., 20 штук этого товара.
-        /// </summary>
+        /// Задача 3. Вывести четные двузначные числа и подсчитать их количество.
         /// <param name="args"></param>
         static void Main(string[] args)
         {
