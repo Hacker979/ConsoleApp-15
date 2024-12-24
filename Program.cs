@@ -13,10 +13,10 @@ namespace ConsoleApp_15
             Random pon = new Random();
             int a = 0;
             int z = 0;
-            for (int x = 1; x <= 15; x++)
+            for (int x = 1; x <= 12; x++)
             {
-                int num = pon.Next(-20,30);
-                Console.WriteLine($"{x} число = {num}");
+                int num = pon.Next(-50,50);
+                Console.WriteLine($"{x} число = {(num < 0 ? "Отрицательное" : "Положительное")}");
                 z = num >= 0 ? a++ : a+0;
                 
             }
@@ -24,7 +24,7 @@ namespace ConsoleApp_15
         }
 
         /// <summary>
-        /// Задача 5. Генерируются 15 случайных целых чисел в интервале (-20, 30). Вывести эти числа и подсчитать количество положительных чисел.
+        /// Задача 6. Генерируется 12 случайных целых чисел в интервале (-50,50). Вывести эти числа и сообщения: отрицательное-положительное.
         /// <param name="args"></param>
         static void Main(string[] args)
         {
