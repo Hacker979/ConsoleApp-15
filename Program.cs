@@ -12,7 +12,7 @@ namespace ConsoleApp_15
         {
             for (int x = 2; x <= 20; x++)
             {
-                Console.WriteLine($"{x}штук = {x*20.4} руб");
+                Console.WriteLine($"{x} штук = {x*20.4} руб");
             }
         }
 
