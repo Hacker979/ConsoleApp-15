@@ -16,7 +16,7 @@ namespace ConsoleApp_15
             for (int x = 1; x <= 12; x++)
             {
                 int num = pon.Next(-50,50);
-                Console.WriteLine($"{x} число = {(num < 0 ? "Отрицательное" : "Положительное")}");
+                Console.WriteLine($"{x} число = {num} {(num < 0 ? "Отрицательное" : "Положительное")}");
                 z = num >= 0 ? a++ : a+0;
                 
             }
